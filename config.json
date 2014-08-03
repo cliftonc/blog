@@ -1,0 +1,27 @@
+{
+  "locals": {
+    "url": "http://localhost:8080",
+    "name": "A place to put things",
+    "owner": "Clifton Cunningham",
+    "description": "A blog"
+  },
+  "plugins": [
+    "./plugins/paginator.coffee",
+    "./plugins/wintersmith-handlebars.coffee"
+  ],
+  "require": {
+    "moment": "moment",
+    "_": "underscore",
+    "typogr": "typogr"
+  },
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  },
+  "paginator": {
+    "perPage": 5
+  }
+}
